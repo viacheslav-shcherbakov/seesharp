@@ -4,7 +4,6 @@ int n1 = -n2;
 Console.WriteLine(n1);
 while (n1<= n2)
 {
-
     Console.Write(n1);
     Console.Write(" ");
     n1 ++;
