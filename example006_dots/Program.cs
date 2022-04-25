@@ -1,12 +1,22 @@
 ﻿//The program about dots
 Console.Clear();
-//Console.SetCursorPosition(10, 4);
-//Console.WriteLine("+");
-
-int xA = 1, yA = 1, xB = 1, yB = 20, xC = 30, yC = 20;
-Console.SetCursorPosition(xA, yA);
-Console.WriteLine("+");
-Console.SetCursorPosition(xB, yB);
-Console.WriteLine("+");
-Console.SetCursorPosition(xC, yC);
-Console.WriteLine("+");
+Console.WriteLine("This is a graphic console to add points");
+Console.Write("Enter the number of dots from 1 to 30: -> ");
+int x = int.Parse(Console.ReadLine() ?? "");
+int count = 0;
+int ptA = 0, ptB = 0;
+if (x > 0 && x <= 30)
+{
+    while(count <= x)
+    {
+        Console.SetCursorPosition(ptA, ptB);
+        Console.WriteLine("+");
+        ptA ++;
+        ptB ++;
+        count ++;
+    }
+}
+else 
+{
+    Console.WriteLine("Too big number");
+}
