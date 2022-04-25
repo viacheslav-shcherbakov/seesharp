@@ -1,7 +1,7 @@
 # seesharp
 gekkbrains_c_sharp
-#For educational use only
+# For educational use only
 
-##Several examples of C# code for nubies
+## Several examples of C# code for nubies
 
 Pull requests are welcomed!
