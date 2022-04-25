@@ -1,10 +1,11 @@
 ﻿//По двум заданным числам проверять является ли первое квадратом второго
+// игровой формат не надоедает
 Console.Clear();
 int[] squareArray = new int [6]{ 25, 36, 64, 9, 81, 16};
 int count = 0;
 int wins = 0;
-Console.WriteLine("Wellcome to the game: Guess the square root!");
-Console.Write("Enter your name ->>  ");
+Console.WriteLine("Wellcome to the 'Guess the square root!' game");
+Console.Write("Enter your name here ->>  ");
 string name = Console.ReadLine() ?? "";
 while (count < 6)
     {
