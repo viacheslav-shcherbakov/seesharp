@@ -1,8 +1,6 @@
 ﻿// Выяснить является ли число чётным
 Console.Clear(); // С чистой консоли лучше видно
 // Для этого ищем остаток от деления на 2
-int count = 0;
-int wins = 0;
 Console.WriteLine("Wellcome to the game: Is it even?");
 Console.Write("Enter your name ->>  ");
 string name = Console.ReadLine() ?? "";
