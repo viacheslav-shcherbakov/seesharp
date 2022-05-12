@@ -9,7 +9,7 @@ int secondnum = int.Parse(Console.ReadLine() ?? "");
 
 if (secondnum*secondnum == firstnum) // Проверяем равно ли квадрату
     {
-        Console.WriteLine("It is scuare!");
+        Console.WriteLine("It is square!");
     }
 else
     {
