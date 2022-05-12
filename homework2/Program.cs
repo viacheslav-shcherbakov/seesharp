@@ -1,16 +1,36 @@
 ﻿//По заданному номеру дня недели вывести его название
 Console.Clear();
-string[] dayofweekArray = new string [7]{ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Satturday", "Sunday"}; 
-//Взял массив, чтобы сократить количество строчек и переменных
-Console.WriteLine("Wellcome to the game: Which day of the week!"); // Опять игровой формат - пока не надоело
-Console.Write("Enter your name ->>  ");
-string name = Console.ReadLine() ?? "";
-Console.Write($"OK, {name}, enter a number from 1 to 7: -> ");
-int number = int.Parse(Console.ReadLine() ?? "");
-if (number < 1 && number > 7) // Отслеживаем ошибки
+
+Console.Write("Enter the number from 1 to 7 ->>  ");
+int weekday = int.Parse(Console.ReadLine() ?? "");
+if (weekday == 1)
 {
-    Console.WriteLine($"{number} is a wrong number!");
+    Console.WriteLine($"{weekday} is Monday!");
+}
+else if (weekday == 2)
+{
+    Console.WriteLine($"{weekday} is Tuesday!");
+}
+else if (weekday == 3)
+{
+    Console.WriteLine($"{weekday} is Wednesday!");
+}
+else if (weekday == 4)
+{
+    Console.WriteLine($"{weekday} is Thursday!");
+}
+else if (weekday == 5)
+{
+    Console.WriteLine($"{weekday} is Friday!");
+}
+else if (weekday == 6)
+{
+    Console.WriteLine($"{weekday} is Saturday!");
+}
+else if (weekday == 7)
+{
+    Console.WriteLine($"{weekday} is Sunday!");
 }
 else{
-    Console.WriteLine("It's " + dayofweekArray[number - 1] + " !"); // Вычитаю один, т.к. массив считается с 0
+     Console.WriteLine("Wrong number!");
 }
