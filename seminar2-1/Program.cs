@@ -4,7 +4,7 @@ int square = int.Parse(Console.ReadLine() ?? "");
 int count = 1;
 while (count < square)
 {
-    Console.Write(square**);
+    Console.Write(square*square);
     count ++;
 }
 Console.WriteLine("Введите число n: ");
