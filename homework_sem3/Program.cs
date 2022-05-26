@@ -59,8 +59,7 @@ int num_sum = 0;
 for (int i = 1; y > 0; i++)
 {
     num_sum = num_sum + y%10;
-    y = y /10;
-  
+    y = y /10;  
 }
 Console.WriteLine($"Сумма цифр в числе {x} = {num_sum}.");
 
@@ -72,7 +71,6 @@ if (z%2 == 0)
 {
     Console.WriteLine($"Число {z} заканчивается на четную цифру и его куб будет = {z*z*z}");
 }
-
 else{
     Console.WriteLine($"Число {z} не заканчивается на четную цифру");
 }
