@@ -96,7 +96,7 @@ void RotateMatrix(int[,] matrix)
         }
     }
 }
-Console.WriteLine("А теперь поменяем местами строки и столбцы (если получится):");
+Console.WriteLine("А теперь поменяем местами строки и столбцы (если получится):...");
 RotateMatrix(matrix);
 PrintMatrix(matrix);
 
